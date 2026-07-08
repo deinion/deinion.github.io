@@ -1,0 +1,158 @@
+<!doctype html>
+<html lang="nl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Deinion</title>
+<meta name="description" content="Deinion ontwikkelt praktische, privacyvriendelijke apparaten die huishoudens helpen grip te krijgen op hun energieverbruik en -kosten.">
+<style>
+  :root {
+    --bg: #ffffff;
+    --bg-alt: #f5f6f8;
+    --text: #1a1d21;
+    --text-muted: #5b6270;
+    --accent: #0d6b3f;
+    --accent-soft: #e6f4ec;
+    --border: #e3e5e9;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #14161a;
+      --bg-alt: #1b1e23;
+      --text: #eceef1;
+      --text-muted: #a2a8b4;
+      --accent: #4fd393;
+      --accent-soft: #1c2b23;
+      --border: #2a2d33;
+    }
+  }
+  * { box-sizing: border-box; }
+  html, body {
+    margin: 0;
+    padding: 0;
+    background: var(--bg);
+    color: var(--text);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    line-height: 1.55;
+  }
+  .wrap {
+    max-width: 760px;
+    margin: 0 auto;
+    padding: 0 1.5rem;
+  }
+  header {
+    padding: 4rem 0 2.5rem;
+  }
+  .logo {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.6rem;
+    font-size: 1.4rem;
+    font-weight: 700;
+    letter-spacing: -0.01em;
+  }
+  .logo .mark {
+    width: 2rem;
+    height: 2rem;
+    border-radius: 0.6rem;
+    background: var(--accent);
+    color: var(--bg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.1rem;
+    font-weight: 800;
+  }
+  h1 {
+    font-size: clamp(1.8rem, 4vw, 2.4rem);
+    line-height: 1.2;
+    margin: 1.6rem 0 0.8rem;
+    letter-spacing: -0.02em;
+  }
+  .tagline {
+    font-size: 1.15rem;
+    color: var(--text-muted);
+    margin: 0 0 0;
+    max-width: 42ch;
+  }
+  section {
+    padding: 2.2rem 0;
+    border-top: 1px solid var(--border);
+  }
+  section h2 {
+    font-size: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: var(--text-muted);
+    margin: 0 0 1.2rem;
+  }
+  .product-card {
+    background: var(--bg-alt);
+    border: 1px solid var(--border);
+    border-radius: 0.9rem;
+    padding: 1.4rem 1.5rem;
+  }
+  .product-card h3 {
+    margin: 0 0 0.4rem;
+    font-size: 1.15rem;
+  }
+  .product-card p {
+    margin: 0;
+    color: var(--text-muted);
+  }
+  .badge {
+    display: inline-block;
+    background: var(--accent-soft);
+    color: var(--accent);
+    font-size: 0.75rem;
+    font-weight: 600;
+    padding: 0.2rem 0.55rem;
+    border-radius: 999px;
+    margin-bottom: 0.6rem;
+  }
+  .product-card.soon {
+    opacity: 0.7;
+  }
+  footer {
+    padding: 2.5rem 0 4rem;
+    color: var(--text-muted);
+    font-size: 0.9rem;
+    border-top: 1px solid var(--border);
+  }
+</style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <div class="logo">
+        <span class="mark">D</span>
+        <span>Deinion</span>
+      </div>
+      <h1>Slimme apparaten die zich terugverdienen.</h1>
+      <p class="tagline">Deinion ontwikkelt praktische, privacyvriendelijke apparaten die huishoudens
+        helpen grip te krijgen op hun energieverbruik en -kosten.</p>
+    </header>
+
+    <section>
+      <h2>Producten</h2>
+      <div class="product-card">
+        <span class="badge">Beschikbaar</span>
+        <h3>Deinion Saver</h3>
+        <p>Meet in realtime uw stroom- en gasverbruik via de P1-poort van uw slimme meter, en helpt
+          u op basis van uw eigen verbruiksprofiel — niet op aannames — het voordeligste
+          energiecontract te bepalen.</p>
+      </div>
+      <div class="product-card soon" style="margin-top: 0.9rem;">
+        <span class="badge">Binnenkort</span>
+        <h3>Meer Deinion-producten</h3>
+        <p>Deinion Saver is ons eerste product. Er volgen meer apparaten onder het Deinion-merk.</p>
+      </div>
+    </section>
+
+    <footer>
+      &copy; <span id="year"></span> Deinion
+    </footer>
+  </div>
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>
