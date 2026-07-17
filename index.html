@@ -3,183 +3,84 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Deinion</title>
+<title>Deinion — het voordeligste energiecontract, berekend met uw eigen verbruik</title>
 <meta name="description" content="Deinion ontwikkelt praktische, privacyvriendelijke apparaten die huishoudens helpen grip te krijgen op hun energieverbruik en -kosten.">
-<style>
-  :root {
-    --bg: #ffffff;
-    --bg-alt: #f5f6f8;
-    --text: #1a1d21;
-    --text-muted: #5b6270;
-    --accent: #0d6b3f;
-    --accent-soft: #e6f4ec;
-    --border: #e3e5e9;
-  }
-  @media (prefers-color-scheme: dark) {
-    :root {
-      --bg: #14161a;
-      --bg-alt: #1b1e23;
-      --text: #eceef1;
-      --text-muted: #a2a8b4;
-      --accent: #4fd393;
-      --accent-soft: #1c2b23;
-      --border: #2a2d33;
-    }
-  }
-  * { box-sizing: border-box; }
-  html, body {
-    margin: 0;
-    padding: 0;
-    background: var(--bg);
-    color: var(--text);
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-    line-height: 1.55;
-  }
-  .wrap {
-    max-width: 760px;
-    margin: 0 auto;
-    padding: 0 1.5rem;
-  }
-  header {
-    padding: 4rem 0 2.5rem;
-  }
-  .logo {
-    display: inline-flex;
-    align-items: center;
-    gap: 0.6rem;
-    font-size: 1.4rem;
-    font-weight: 700;
-    letter-spacing: -0.01em;
-  }
-  .logo .mark {
-    width: 2rem;
-    height: 2rem;
-    border-radius: 0.6rem;
-    background: var(--accent);
-    color: var(--bg);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 1.1rem;
-    font-weight: 800;
-  }
-  h1 {
-    font-size: clamp(1.8rem, 4vw, 2.4rem);
-    line-height: 1.2;
-    margin: 1.6rem 0 0.8rem;
-    letter-spacing: -0.02em;
-  }
-  .tagline {
-    font-size: 1.15rem;
-    color: var(--text-muted);
-    margin: 0 0 0;
-    max-width: 42ch;
-  }
-  section {
-    padding: 2.2rem 0;
-    border-top: 1px solid var(--border);
-  }
-  section h2 {
-    font-size: 1rem;
-    text-transform: uppercase;
-    letter-spacing: 0.08em;
-    color: var(--text-muted);
-    margin: 0 0 1.2rem;
-  }
-  .product-card {
-    background: var(--bg-alt);
-    border: 1px solid var(--border);
-    border-radius: 0.9rem;
-    padding: 1.4rem 1.5rem;
-  }
-  .product-card h3 {
-    margin: 0 0 0.4rem;
-    font-size: 1.15rem;
-  }
-  .product-card p {
-    margin: 0;
-    color: var(--text-muted);
-  }
-  .badge {
-    display: inline-block;
-    background: var(--accent-soft);
-    color: var(--accent);
-    font-size: 0.75rem;
-    font-weight: 600;
-    padding: 0.2rem 0.55rem;
-    border-radius: 999px;
-    margin-bottom: 0.6rem;
-  }
-  .product-card.soon {
-    opacity: 0.7;
-  }
-  .shots {
-    display: flex;
-    flex-direction: column;
-    gap: 1.4rem;
-  }
-  figure {
-    margin: 0;
-  }
-  figure img {
-    display: block;
-    width: 100%;
-    height: auto;
-    border-radius: 0.7rem;
-    border: 1px solid var(--border);
-  }
-  figcaption {
-    margin-top: 0.5rem;
-    font-size: 0.85rem;
-    color: var(--text-muted);
-  }
-  .contact a {
-    color: var(--accent);
-    text-decoration: none;
-    font-weight: 600;
-  }
-  .contact a:hover {
-    text-decoration: underline;
-  }
-  footer {
-    padding: 2.5rem 0 4rem;
-    color: var(--text-muted);
-    font-size: 0.9rem;
-    border-top: 1px solid var(--border);
-  }
-</style>
+<link rel="canonical" href="https://deinion.nl/">
+<link rel="stylesheet" href="/style.css">
 </head>
 <body>
   <div class="wrap">
-    <header>
+
+    <div class="site-head">
       <div class="logo">
         <span class="mark">D</span>
         <span>Deinion</span>
       </div>
-      <h1>Slimme apparaten die zich terugverdienen.</h1>
-      <p class="tagline">Deinion ontwikkelt praktische, privacyvriendelijke apparaten die huishoudens
-        helpen grip te krijgen op hun energieverbruik en -kosten.</p>
-    </header>
+      <nav class="nav">
+        <a href="/" aria-current="page">Home</a>
+        <a href="/overstappen/">Overstappen</a>
+      </nav>
+    </div>
 
-    <section>
-      <h2>Producten</h2>
-      <div class="product-card">
+    <section class="hero">
+      <h1>Het voordeligste energiecontract, berekend met <span class="accent">uw eigen verbruik</span>.</h1>
+      <p class="lead">Vast, variabel of dynamisch — de Deinion Saver rekent ze allemaal voor u door.
+        Niet met een gemiddelde, maar met wat u werkelijk verbruikt.</p>
+    </section>
+
+    <section class="duo" aria-label="Een schatting tegenover een meting">
+
+      <div class="duo-kaart duo-gok">
+        <p class="duo-label">Zoals het meestal gaat</p>
+        <h2>Een schatting</h2>
+        <p>Een vergelijker vraagt u hoeveel stroom en gas u per jaar verbruikt. Bijna niemand weet
+          dat uit zijn hoofd. Het advies dat u krijgt, is dus gebaseerd op een gok.</p>
+      </div>
+
+      <div class="duo-kaart duo-meting">
+        <p class="duo-label">Zoals wij het doen</p>
+        <h2>Een meting</h2>
+        <p>De Deinion Saver meet uw verbruik gewoon, elke minuut, in uw eigen meterkast. U hoeft
+          niets in te vullen. Het advies klopt dus met uw eigen rekening.</p>
+      </div>
+
+    </section>
+
+    <section class="band ritme">
+      <p class="band-titel">Waarom dat uitmaakt</p>
+      <p class="statement">Het gaat niet om <span class="accent">hoevéél</span> u verbruikt,
+        maar om <span class="accent">wannéér</span>.</p>
+      <p class="statement-sub">Twee gezinnen die evenveel verbruiken, betalen niet hetzelfde. Wie
+        thuis werkt, 's avonds de auto laadt of zonnepanelen op het dak heeft, gebruikt stroom op
+        heel andere momenten dan de buurman. Dat scheelt op uw rekening — bij dag- en
+        nachttarieven, en zeker bij een dynamisch contract. Een geschat jaarverbruik ziet dat
+        verschil niet. Uw Deinion Saver kent het ritme van uw huishouden, want hij meet het.</p>
+    </section>
+
+    <section class="band">
+      <p class="band-titel">Product</p>
+      <div class="kaart">
         <span class="badge">Beschikbaar vanaf begin 2027</span>
         <h3>Deinion Saver</h3>
-        <p>Meet in realtime uw stroom- en gasverbruik via de P1-poort van uw slimme meter, en helpt
-          u op basis van uw eigen verbruiksprofiel — niet op aannames — het voordeligste
-          energiecontract te bepalen. De Deinion Saver vergelijkt voor u meer dan 30 diverse
-          energiecontracten.</p>
-      </div>
-      <div class="product-card soon" style="margin-top: 0.9rem;">
-        <span class="badge">Binnenkort</span>
-        <h3>Meer Deinion-producten</h3>
-        <p>Deinion Saver is ons eerste product. Er volgen meer apparaten onder het Deinion-merk.</p>
+        <p>Meet elke minuut uw stroom- en gasverbruik via de P1-poort van uw slimme meter, en
+          berekent daarmee wat u bij elk energiecontract werkelijk betaald zou hebben. De Deinion
+          Saver vergelijkt voor u meer dan 30 vaste, variabele en dynamische contracten. Uw
+          meetgegevens blijven in huis: het apparaat rekent zelf, in uw meterkast.</p>
       </div>
     </section>
 
-    <section>
-      <h2>In actie</h2>
+    <section class="band">
+      <p class="band-titel">Werkt samen met</p>
+      <div class="kaart">
+        <h3>Home Assistant, Domoticz en slimme laadpalen</h3>
+        <p>De Deinion Saver is HomeWizard-compatibel. In Home Assistant voegt u hem daarom toe
+          met de ingebouwde HomeWizard Energy-integratie — u hoeft niets extra's te installeren.
+          Domoticz en laadpalen die om een P1-meter vragen, laat u op dezelfde manier meelezen.</p>
+      </div>
+    </section>
+
+    <section class="band">
+      <p class="band-titel">In actie</p>
       <div class="shots">
         <figure>
           <img src="img/dashboard.webp" alt="Deinion Saver dashboard met live verbruiksgrafiek" loading="lazy" width="1400" height="787">
@@ -192,14 +93,29 @@
       </div>
     </section>
 
-    <section class="contact">
-      <h2>Contact</h2>
-      <p><a href="mailto:info@deinion.nl">info@deinion.nl</a></p>
+    <section class="band">
+      <a class="kaart kaart-link" href="/overstappen/">
+        <div>
+          <h3>Overstappen van energieleverancier</h3>
+          <p>Hoe een overstap werkt, wat een opzegvergoeding u kost, en hoe wij aan een overstap
+            verdienen.</p>
+        </div>
+        <span class="pijl" aria-hidden="true">→</span>
+      </a>
     </section>
 
-    <footer>
-      &copy; <span id="year"></span> Deinion
-    </footer>
+    <section class="band">
+      <p class="band-titel">Contact</p>
+      <a class="mail" href="mailto:info@deinion.nl">info@deinion.nl</a>
+    </section>
+
+    <div class="site-foot">
+      <span>&copy; <span id="year"></span> Deinion — praktische, privacyvriendelijke apparaten voor uw energieverbruik.<br>
+        HomeWizard, Home Assistant en Domoticz zijn merken van hun respectieve eigenaren.
+        Deinion is niet aan hen verbonden.</span>
+      <span><a href="/overstappen/">Overstappen</a></span>
+    </div>
+
   </div>
   <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
 </body>
